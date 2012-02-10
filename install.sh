@@ -48,13 +48,14 @@ sudo sh /srv/jboss-4.2.3.GA/bin/run.sh &
 
 
 
-sleep 20
+sleep 30
 
 
 cd ~/tagbrowser/dist
-java -jar tagsobe.jar http://localhost:8080/seam-booking/
-
+java -jar tagsobe.jar http://localhost:8080/seam-booking/home.seam
 
 sudo sh /srv/jboss-4.2.3.GA/bin/shutdown.sh localhost
+
+cd
 
 
