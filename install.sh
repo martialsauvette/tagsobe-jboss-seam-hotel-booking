@@ -36,7 +36,7 @@ cd
 wget http://sourceforge.net/projects/jboss/files/JBoss%20Seam/2.2.2.Final/jboss-seam-2.2.2.Final.zip/download -O seam.zip
 unzip seam.zip
 cd jboss-seam-2.2.2.Final/examples
-
+find . -type d  | xargs rm -rf
 git clone git://github.com/martailsauvette/tagsobe-jboss-seam-hotel-booking.git
 
 cd tagsobe-jboss-seam-hotel-booking
