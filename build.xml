@@ -4,7 +4,7 @@
 
     <!-- Naming -->
     <property name="Name"                   value="Seam on JBoss Booking Example"/>
-    <property name="example.name"           value="jboss-seam-booking"/>
+    <property name="example.name"           value="tagsobe-jboss-seam-hotel-booking"/>
 	
     <!-- Libraries to include -->
     <property name="seam.ui.lib"    value="yes"/>
