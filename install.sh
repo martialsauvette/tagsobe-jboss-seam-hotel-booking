@@ -45,16 +45,19 @@ ant
 
 cd
 sudo sh /srv/jboss-4.2.3.GA/bin/run.sh &
-
-
-
 sleep 30
 
+cd
+mkdir log
+touch ~/log/run.log
 
 cd ~/tagbrowser/dist
-java -jar tagsobe.jar http://localhost:8080/seam-booking/home.seam
+java -jar tagsobe.jar http://localhost:8080/seam-booking/home.seam | tee ~/log/run.log
 
 sudo sh /srv/jboss-4.2.3.GA/bin/shutdown.sh localhost
+
+mail -s "tagsobe result" sauvette@objectcode.de <  ~/log/run.log
+
 
 cd
 
