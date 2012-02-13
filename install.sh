@@ -56,7 +56,7 @@ java -jar tagsobe.jar http://localhost:8080/seam-booking/home.seam | tee ~/log/r
 
 sudo sh /srv/jboss-4.2.3.GA/bin/shutdown.sh localhost
 
-mail -s "tagsobe result" sauvette@objectcode.de <  ~/log/run.log
+mail -s "tagsobe result" sauvette@objectcode.de,viola@objectcode.de <  ~/log/run.log
 
 
 cd
