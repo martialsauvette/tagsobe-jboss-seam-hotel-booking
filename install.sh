@@ -3,6 +3,7 @@
 
 sudo yum -y install git
 sudo yum -y install java-1.6.0-openjdk-devel
+export JAVA_HOME=/usr/lib/jvm/java-openjdk
 #sudo yum -y install tomcat6-webapps
 sudo yum -y install mysql
 sudo yum -y install mysql-server
@@ -52,13 +53,10 @@ mkdir log
 touch ~/log/run.log
 
 cd ~/tagbrowser/dist
-java -jar tagsobe.jar http://localhost:8080/seam-booking/home.seam | tee ~/log/run.log
+java  -Dfmt=java -jar tagsobe.jar http://localhost:8080/seam-booking/home.seam | tee ~/log/run.log
 
 sudo sh /srv/jboss-4.2.3.GA/bin/shutdown.sh localhost
 
-mail -s "tagsobe result" sauvette@objectcode.de,viola@objectcode.de <  ~/log/run.log
-
+mail -s "tagsobe jboss-seam-hotel-booking result" sauvette@objectcode.de,viola@objectcode.de <  ~/log/run.log
 
 cd
-
-
