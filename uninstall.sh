@@ -17,5 +17,5 @@ rm install.sh
 rm uninstall.sh
 sudo rm -rf /srv/*
 
-reboot
+sudo reboot
 
