@@ -3,5 +3,13 @@
 	<classpathentry excluding="resources/|src/org/jboss/seam/example/booking/|src/org/jboss/seam/example/booking/test/|view/|view/css/|view/exp/|view/img/|src/org/jboss/seam/example/|src/org/jboss/seam/|src/org/jboss/|src/org/|src/|src/|resources/|lib/" kind="src" path=""/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="resources"/>
+<!-- 	<classpathentry kind="lib" path="/home/msauvette/oc/oc_project/tagsobe-project-workspace/jboss-seam-2.2.2.Final/lib/jboss-seam.jar"/> -->
+	<classpathentry kind="var" path="SEAM_LIB/testng-jdk15.jar"/>
+	<classpathentry kind="var" path="SEAM_LIB/jsf-api.jar"/>
+	<classpathentry kind="var" path="SEAM_LIB/ejb-api.jar"/>
+	<classpathentry kind="var" path="SEAM_LIB/persistence-api.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="SEAM_LIB/hibernate-validator.jar"/>
+  	<classpathentry kind="var" path="SEAM_LIB/jboss-seam.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
