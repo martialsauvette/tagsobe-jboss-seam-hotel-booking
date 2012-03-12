@@ -10,7 +10,7 @@ sudo yum -y install mysql-server
 sudo yum -y install ant
 
 
-git clone git://github.com/martailsauvette/tagbrowser.git
+git clone git://github.com/martialsauvette/tagbrowser.git
 cd tagbrowser
 ant
 cd
@@ -38,7 +38,7 @@ wget http://sourceforge.net/projects/jboss/files/JBoss%20Seam/2.2.2.Final/jboss-
 unzip seam.zip
 cd jboss-seam-2.2.2.Final/examples
 find . -type d  | xargs rm -rf
-git clone git://github.com/martailsauvette/tagsobe-jboss-seam-hotel-booking.git
+git clone git://github.com/martialsauvette/tagsobe-jboss-seam-hotel-booking.git
 
 cd tagsobe-jboss-seam-hotel-booking
 mv build.properties ../..
