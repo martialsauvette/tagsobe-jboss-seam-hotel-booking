@@ -5,6 +5,7 @@ import static javax.ejb.TransactionAttributeType.REQUIRES_NEW;
 import static org.jboss.seam.ScopeType.SESSION;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.ejb.Remove;
@@ -52,9 +53,11 @@ public class BookingListAction implements BookingList, Serializable
    @Observer("bookingConfirmed")
    public void getBookings()
    {
-      bookings = em.createQuery("select b from Booking b where b.user.username = :username order by b.checkinDate")
-            .setParameter("username", user.getUsername())
-            .getResultList();
+//      bookings = em.createQuery("select b from Booking b where b.user.username = :username order by b.checkinDate")
+//            .setParameter("username", user.getUsername())
+//            .getResultList();
+      
+      bookings = new ArrayList<Booking>();
    }
    
    public void cancel()
